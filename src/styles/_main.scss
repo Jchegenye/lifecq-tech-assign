@@ -5,11 +5,85 @@ body {
     color: var(--white);
 }
 
+// Timeline
 .timeline{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 50%;
-    transform: translate(0%, -50%);
-    width: 100%;
+    top: 45%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    
+    &__body{
+        text-align: center;
+        width: 100%;
+        
+        &__content{
+            &__start{
+                width: 100%; 
+                display: flex; 
+                align-items: center;
+                
+                &__popover{
+                    position: relative;
+                    
+                    &--start{
+                        position: absolute;
+                        top: 18px;
+                        left: -45px;
+                        width: 70px;
+                        display: block;
+                        
+                        p{
+                            font-weight: var(--font-weight-lighter);
+                            font-size: var(--font-normal);
+                            color: var(--white);
+                            opacity: 0.6;
+                            margin: 0;
+                        }
+                    }
+                    &--all{
+                        position: absolute;
+                        left: -69px;
+                        top: 35px;
+                    }
+                }
+            }
+            &__circled {
+                width: 8px;
+                height: 8px;
+                background: var(--tertiary-color);
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+        }
+        
+        &__start {
+            border: 6px solid var(--tertiary-color);
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+        &__line{
+            height: 2px;
+            background: var(--white);
+            border-radius: 2px;
+            width: inherit;
+            margin: 0 8px;
+        }
+    }
+    
+    
+    ul{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        
+        li{
+            margin: 0;
+            list-style-type: none;
+            width: 100%;
+        }
+    }
 }

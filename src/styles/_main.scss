@@ -1,6 +1,15 @@
 body {
-    background-color: rgba(33, 90, 107, 1);
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 14px;
-    color: #ffffff;
+    background-color: var(--main-bg-color);
+    font-family: var(--font-family-ibm);
+    font-size: var(--font-normal);
+    color: var(--white);
+}
+
+.timeline{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
 }

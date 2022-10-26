@@ -1,13 +1,132 @@
-.popover{
-    background: #173F4B;
+.popover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
     width: 130px;
     height: 136px;
+    gap: 16px;
+    padding: 10px 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 0 auto;
+    
+    // Arrow
+    &__arrow {
+        position: absolute;
+        background-color: var(--primary-color);
+        height: 1rem;
+        width: 1rem;
+        
+        // place arrow TOP LEFT
+        &--tl {
+            left: 1rem;
+            top: 0;
+            border-left: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        // place arrow TOP CENTER
+        &--tc {
+            left: 50%;
+            top: 0;
+            border-left: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        // place arrow TOP RIGHT
+        &--tr {
+            right: 1rem;
+            top: 0;
+            border-left: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        // place arrow RIGHT TOP
+        &--rt {
+            right: 0;
+            top: 1rem;
+            border-right: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(50%, 50%) rotate(45deg);
+        }
+        // place arrow RIGHT CENTER
+        &--rc {
+            right: 0;
+            top: 50%;
+            border-right: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        // place arrow RIGHT BOTTOM
+        &--rb {
+            bottom: 1rem;
+            right: 0;
+            border-right: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        // place arrow BOTTOM LEFT
+        &--bl {
+            bottom: -1rem;
+            left: 1rem;
+            border-bottom: 1px solid var(--primary-color);
+            border-right: 1px solid var(--primary-color);
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        // place arrow BOTTOM CENTER
+        &--bc {
+            bottom: -1rem;
+            left: 50%;
+            border-bottom: 1px solid var(--primary-color);
+            border-right: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        // place arrow BOTTOM RIGHT
+        &--br {
+            bottom: -1rem;
+            right: 1rem;
+            border-bottom: 1px solid var(--primary-color);
+            border-right: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        // place arrow LEFT TOP
+        &--lt {
+            left: 0;
+            top: 1rem;
+            border-bottom: 1px solid var(--primary-color);
+            border-left: 1px solid var(--primary-color);
+            transform: translate(-50%, 50%) rotate(45deg);
+        }
+        // place arrow LEFT CENTER
+        &--lc {
+            left: 0;
+            top: 50%;
+            border-bottom: 1px solid var(--primary-color);
+            border-left: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        // place arrow LEFT BOTTOM
+        &--lb {
+            bottom: 1rem;
+            left: 0;
+            border-bottom: 1px solid var(--primary-color);
+            border-left: 1px solid var(--primary-color);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+    
     &__content{
+        z-index: 1;
         text-align: center;
-        // &__img{
-        // }
-        // &__description{
-        // }
+        
+        &__img {
+            width: 114px;
+            height: 76px;
+            background-color: var(--white);
+            padding: 5px;
+            border-radius: 4px;
+        }
     }
 }

@@ -1,65 +1,18 @@
 :root {
-    /* These don't change in dark mode */
-    --yellow: #fed800;
-    --green: hsl(87, 71%, 35%);
-    --light-green: #f1ffdc;
-    --lightest-green: #e7ede4;
-    --lightest-yellow: #e7ede4;
-    --red: #d10000;
-    --gray: #c5c5c5;
-    --lightest-gray: #ebeef1;
-    --light-red: #ffdada;
-    --lightest-red: #e9dbde;
-    --light-blue: #ebf0f5;
-    --lightest-blue: #f0f2f5;
-    --blue-gray: #222e40;
-    --always-black: #16202c;
-    --always-white: #fff;
-    --light-yellow: #fed80026;
-    --non-active-state: #98a9bc;
-    --dt-black-3: #28323e;
-    --subtle-dark-background: #d8d8d8;
-
-    /* These change in dark mode */
-    --main-bg-color: #ffffff;
-    --black-light: #f6fbff;
+    --main-bg-color: #215A6B;
+    --primary-color: #173F4B;
+    --secondary-color: #3C7F90;
     --white: #ffffff;
-    --black: #16202c;
-    --light-black: rgba(0, 0, 0, 0.7);
-    --lightest-black: rgba(0, 0, 0, 0.5);
-    --dark-blue: #1d2638;
-    --light-dark-blue: #6f8094;
-    --light-gray: #e8e8e8;
-    --scrollbar-color: #dedede;
-    --active-state: #374957;
-    --gray-100: #e1e1e1;
-    --light-gray-border: #e8e8e8;
-    --black-dark-10: #ffffff;
-    --line-11: #e8e8e8;
-    --black-dark-20: #ffffff;
 
-    --margin-top: 80px;
-    --margin-top-without-nav: 40px;
-    --margin-bottom: 55px;
-    --padding-bottom: 70px;
-    --base-padding-edges: 20px;
-    --base-margin: 5px;
-    --base-padding: 10px;
-    --base-radius: 4px;
-    --desktop-header-offset: 0px;
-
-    --font: "Inter";
-    --font-massive: 24px;
-    --font-largest: 18px;
+    --font-family-ibm: "IBM Plex Sans", sans-serif;
+    
     --font-large: 16px;
-    --font-medium: 14px;
     --font-normal: 14px;
     --font-small: 12px;
-    --font-smallest: 10px;
-    --font-tiny: 8px;
 
-    --font-weight-lighter: 300;
+    --font-weight-lighter: 400;
     --font-weight-normal: normal;
-    --font-weight-medium: 500;
-    --font-weight-bold: bold;
+}
+html.dark {
+    --main-bg-color: #ffffff;
 }

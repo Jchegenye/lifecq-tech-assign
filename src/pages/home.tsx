@@ -1,10 +1,21 @@
-import family from './assets/family.svg';
 import Popover from "../components/Popover/Index";
+import familySvg from '../assets/timeline/family.svg';
 
 function App() {
     return (
         <div className='timeline'>
-            <Popover />
+            {/* <ul>
+    	        <li></li>
+    	        <li></li>
+    	        <li></li>
+            </ul>   */}
+            <Popover 
+                imageUrl={familySvg}
+                imageAlt={'Baby’s birth image'}
+                description={"Baby’s birth"}
+                canHover={false}
+                placement={'tc'}
+            />
         </div>
     );
 }

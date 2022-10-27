@@ -6,7 +6,8 @@ type PopoverProps = {
   imageAlt: string,
   description: string,
   canHover: boolean,
-  placement: string
+  placement: string,
+  isActive: boolean
 }
 
 export default class Popover extends React.Component <PopoverProps> {
@@ -14,14 +15,15 @@ export default class Popover extends React.Component <PopoverProps> {
     imageAlt: '',
     description: '',
     canHover: true,
-    placement: 'tc' //Check popover.scss for more arrow placement
+    placement: 'tc', //Check popover.scss for more arrow placements
+    isActive: false 
   };
   
   render() {
     const vm = this;
     
     return (
-      <div className="popover">
+      <div className={vm.props.isActive ? 'popover active':'popover'}>
         <div className={"popover__arrow popover__arrow--"+ vm.props.placement}></div>
         <div className="popover__content">
           <img src={vm.props.imageUrl} alt={vm.props.imageAlt} className="popover__content__img"/>
